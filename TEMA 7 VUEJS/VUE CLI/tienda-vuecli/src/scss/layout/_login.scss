@@ -1,0 +1,50 @@
+.login{
+    border:2px solid color(primary);
+    border-radius:10px;
+    width:30%;
+    margin:4% auto;
+    padding:2rem;
+
+    @include flexposition(center,center);
+    flex-direction:column;
+
+    @include response(lg){
+        width:40%;
+    }
+    @include response(md){
+        width:55%;
+    }    
+    @include response(sm){
+        width:80%;
+    }
+    & h2{
+        text-align:center;
+        margin:0.5rem auto 1.5rem;
+    }
+
+    & form{
+        @include flexposition(center, center);
+        flex-direction:column;
+        & div{
+            margin-bottom:1rem;
+            width:100%;
+            & input{
+                margin-left:0.5rem;
+                width:90%;
+            }
+        }
+    }
+
+    & .btn{
+        margin:1rem 0 0;
+    }
+    
+    & p{
+        margin:1rem 0;
+    }
+
+    & .loginGoogle{
+        border-radius:5px;
+    }
+
+}
